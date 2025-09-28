@@ -1,0 +1,72 @@
+src/
+├── main/
+│   ├── java/
+│   │   └── com/
+│   │       └── jobPortal/
+│   │           ├── ZidioConnectApplication.java
+│   │           ├── config/
+│   │           │   ├── CloudinaryConfig.java
+│   │           │   └── SecurityConfig.java
+│   │           ├── controller/
+│   │           │   ├── AdminController.java
+│   │           │   ├── AuthController.java
+│   │           │   ├── JobController.java
+│   │           │   ├── RecruiterController.java
+│   │           │   └── StudentController.java
+│   │           ├── dto/
+│   │           │   ├── ApplicationDTO.java
+│   │           │   ├── JobDTO.java
+│   │           │   ├── LoginDTO.java
+│   │           │   ├── RecruiterDTO.java
+│   │           │   ├── RegisterDTO.java
+│   │           │   └── StudentDTO.java
+│   │           ├── entity/
+│   │           │   ├── Application.java
+│   │           │   ├── Job.java
+│   │           │   ├── Recruiter.java
+│   │           │   ├── Student.java
+│   │           │   └── User.java
+│   │           ├── enum/
+│   │           │   ├── ApplicationStatus.java
+│   │           │   ├── JobType.java
+│   │           │   └── UserRole.java
+│   │           ├── exception/
+│   │           │   ├── CustomException.java
+│   │           │   └── GlobalExceptionHandler.java
+│   │           ├── repository/
+│   │           │   ├── ApplicationRepository.java
+│   │           │   ├── JobRepository.java
+│   │           │   ├── RecruiterRepository.java
+│   │           │   ├── StudentRepository.java
+│   │           │   └── UserRepository.java
+│   │           ├── security/
+│   │           │   ├── CustomUserDetails.java
+│   │           │   ├── CustomUserDetailsService.java
+│   │           │   ├── JwtAuthenticationFilter.java
+│   │           │   ├── JwtUtil.java
+│   │           │   └── SecurityConfig.java
+│   │           ├── service/
+│   │           │   ├── impl/
+│   │           │   │   ├── AdminServiceImpl.java
+│   │           │   │   ├── ApplicationServiceImpl.java
+│   │           │   │   ├── FileUploadServiceImpl.java
+│   │           │   │   ├── JobServiceImpl.java
+│   │           │   │   ├── RecruiterServiceImpl.java
+│   │           │   │   └── StudentServiceImpl.java
+│   │           │   ├── AdminService.java
+│   │           │   ├── ApplicationService.java
+│   │           │   ├── FileUploadService.java
+│   │           │   ├── JobService.java
+│   │           │   ├── RecruiterService.java
+│   │           │   └── StudentService.java
+│   │           └── util/
+│   │               └── InvoiceGenerator.java
+│   └── resources/
+│       ├── application.properties
+│       ├── static/
+│       └── templates/
+└── test/
+    └── java/
+        └── com/
+            └── jobPortal/
+                └── ZidioConnectApplicationTests.java
