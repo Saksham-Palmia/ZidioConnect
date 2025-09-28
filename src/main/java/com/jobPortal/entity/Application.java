@@ -1,11 +1,17 @@
 package com.jobPortal.entity;
 
 import com.jobPortal.enums.ApplicationStatus;
+
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "applications")
+@Getter
+@Setter
 public class Application {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -41,21 +47,5 @@ public class Application {
     }
     
     // Getters and Setters
-    public Long getId() { return id; }
-    public void setId(Long id) { this.id = id; }
-    
-    public Student getStudent() { return student; }
-    public void setStudent(Student student) { this.student = student; }
-    
-    public Job getJob() { return job; }
-    public void setJob(Job job) { this.job = job; }
-    
-    public ApplicationStatus getStatus() { return status; }
-    public void setStatus(ApplicationStatus status) { this.status = status; }
-    
-    public LocalDateTime getAppliedDate() { return appliedDate; }
-    public void setAppliedDate(LocalDateTime appliedDate) { this.appliedDate = appliedDate; }
-    
-    public String getCoverLetter() { return coverLetter; }
-    public void setCoverLetter(String coverLetter) { this.coverLetter = coverLetter; }
+   
 }

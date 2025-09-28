@@ -12,8 +12,13 @@ import javax.persistence.Table;
 
 import com.jobPortal.enums.PaymentStatus;
 
+import lombok.Getter;
+import lombok.Setter;
+
 @Entity
 @Table(name = "paid_subscriptions")
+@Getter
+@Setter
 public class PaidSubscription {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -52,36 +57,5 @@ public class PaidSubscription {
     }
     
     // Getters and Setters
-    public Long getId() { return id; }
-    public void setId(Long id) { this.id = id; }
     
-    public Long getRecruiterId() { return recruiterId; }
-    public void setRecruiterId(Long recruiterId) { this.recruiterId = recruiterId; }
-    
-    public Long getEmployeeId() { return employeeId; }
-    public void setEmployeeId(Long employeeId) { this.employeeId = employeeId; }
-    
-    public Long getPlanId() { return planId; }
-    public void setPlanId(Long planId) { this.planId = planId; }
-    
-    public Double getAmount() { return amount; }
-    public void setAmount(Double amount) { this.amount = amount; }
-    
-    public String getUserEmail() { return userEmail; }
-    public void setUserEmail(String userEmail) { this.userEmail = userEmail; }
-    
-    public LocalDate getStartDate() { return startDate; }
-    public void setStartDate(LocalDate startDate) { this.startDate = startDate; }
-    
-    public LocalDate getEndDate() { return endDate; }
-    public void setEndDate(LocalDate endDate) { this.endDate = endDate; }
-    
-    public String getCurrency() { return currency; }
-    public void setCurrency(String currency) { this.currency = currency; }
-    
-    public PaymentStatus getPaymentStatus() { return paymentStatus; }
-    public void setPaymentStatus(PaymentStatus paymentStatus) { this.paymentStatus = paymentStatus; }
-    
-    public String getInvoiceUrl() { return invoiceUrl; }
-    public void setInvoiceUrl(String invoiceUrl) { this.invoiceUrl = invoiceUrl; }
 }

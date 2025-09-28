@@ -15,8 +15,13 @@ import javax.persistence.Table;
 
 import com.jobPortal.enums.JobType;
 
+import lombok.Getter;
+import lombok.Setter;
+
 @Entity
 @Table(name = "jobs")
+@Getter
+@Setter
 public class Job {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -53,33 +58,5 @@ public class Job {
     }
     
     // Getters and Setters
-    public Long getId() { return id; }
-    public void setId(Long id) { this.id = id; }
     
-    public String getTitle() { return title; }
-    public void setTitle(String title) { this.title = title; }
-    
-    public String getDescription() { return description; }
-    public void setDescription(String description) { this.description = description; }
-    
-    public String getRequirements() { return requirements; }
-    public void setRequirements(String requirements) { this.requirements = requirements; }
-    
-    public String getLocation() { return location; }
-    public void setLocation(String location) { this.location = location; }
-    
-    public Double getSalary() { return salary; }
-    public void setSalary(Double salary) { this.salary = salary; }
-    
-    public JobType getType() { return type; }
-    public void setType(JobType type) { this.type = type; }
-    
-    public LocalDateTime getPostedDate() { return postedDate; }
-    public void setPostedDate(LocalDateTime postedDate) { this.postedDate = postedDate; }
-    
-    public LocalDateTime getDeadline() { return deadline; }
-    public void setDeadline(LocalDateTime deadline) { this.deadline = deadline; }
-    
-    public Recruiter getRecruiter() { return recruiter; }
-    public void setRecruiter(Recruiter recruiter) { this.recruiter = recruiter; }
 }

@@ -4,8 +4,13 @@ import javax.persistence.Table;
 
 import com.jobPortal.enums.UserRole;
 
+import lombok.Getter;
+import lombok.Setter;
+
 @Entity
 @Table(name = "recruiters")
+@Getter
+@Setter
 public class Recruiter extends User {
     private String companyName;
     private String companyAddress;
@@ -23,15 +28,5 @@ public class Recruiter extends User {
     }
     
     // Getters and Setters
-    public String getCompanyName() { return companyName; }
-    public void setCompanyName(String companyName) { this.companyName = companyName; }
-    
-    public String getCompanyAddress() { return companyAddress; }
-    public void setCompanyAddress(String companyAddress) { this.companyAddress = companyAddress; }
-    
-    public String getPhone() { return phone; }
-    public void setPhone(String phone) { this.phone = phone; }
-    
-    public String getWebsite() { return website; }
-    public void setWebsite(String website) { this.website = website; }
+   
 }
