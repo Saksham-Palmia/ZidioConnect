@@ -1,72 +1,115 @@
-src/
-├── main/
-│   ├── java/
-│   │   └── com/
-│   │       └── jobPortal/
-│   │           ├── ZidioConnectApplication.java
-│   │           ├── config/
-│   │           │   ├── CloudinaryConfig.java
-│   │           │   └── SecurityConfig.java
-│   │           ├── controller/
-│   │           │   ├── AdminController.java
-│   │           │   ├── AuthController.java
-│   │           │   ├── JobController.java
-│   │           │   ├── RecruiterController.java
-│   │           │   └── StudentController.java
-│   │           ├── dto/
-│   │           │   ├── ApplicationDTO.java
-│   │           │   ├── JobDTO.java
-│   │           │   ├── LoginDTO.java
-│   │           │   ├── RecruiterDTO.java
-│   │           │   ├── RegisterDTO.java
-│   │           │   └── StudentDTO.java
-│   │           ├── entity/
-│   │           │   ├── Application.java
-│   │           │   ├── Job.java
-│   │           │   ├── Recruiter.java
-│   │           │   ├── Student.java
-│   │           │   └── User.java
-│   │           ├── enum/
-│   │           │   ├── ApplicationStatus.java
-│   │           │   ├── JobType.java
-│   │           │   └── UserRole.java
-│   │           ├── exception/
-│   │           │   ├── CustomException.java
-│   │           │   └── GlobalExceptionHandler.java
-│   │           ├── repository/
-│   │           │   ├── ApplicationRepository.java
-│   │           │   ├── JobRepository.java
-│   │           │   ├── RecruiterRepository.java
-│   │           │   ├── StudentRepository.java
-│   │           │   └── UserRepository.java
-│   │           ├── security/
-│   │           │   ├── CustomUserDetails.java
-│   │           │   ├── CustomUserDetailsService.java
-│   │           │   ├── JwtAuthenticationFilter.java
-│   │           │   ├── JwtUtil.java
-│   │           │   └── SecurityConfig.java
-│   │           ├── service/
-│   │           │   ├── impl/
-│   │           │   │   ├── AdminServiceImpl.java
-│   │           │   │   ├── ApplicationServiceImpl.java
-│   │           │   │   ├── FileUploadServiceImpl.java
-│   │           │   │   ├── JobServiceImpl.java
-│   │           │   │   ├── RecruiterServiceImpl.java
-│   │           │   │   └── StudentServiceImpl.java
-│   │           │   ├── AdminService.java
-│   │           │   ├── ApplicationService.java
-│   │           │   ├── FileUploadService.java
-│   │           │   ├── JobService.java
-│   │           │   ├── RecruiterService.java
-│   │           │   └── StudentService.java
-│   │           └── util/
-│   │               └── InvoiceGenerator.java
-│   └── resources/
-│       ├── application.properties
-│       ├── static/
-│       └── templates/
-└── test/
-    └── java/
-        └── com/
-            └── jobPortal/
-                └── ZidioConnectApplicationTests.java
+ZIDIO/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── jobPortal/
+│   │   │           ├── ZidioConnectApplication.java
+│   │   │           ├── config/
+│   │   │           │   ├── CloudinaryConfig.java
+│   │   │           │   └── SecurityConfig.java
+│   │   │           ├── controller/
+│   │   │           │   ├── AdminController.java
+│   │   │           │   ├── AnalyticsController.java
+│   │   │           │   ├── ApplicationController.java
+│   │   │           │   ├── AuthController.java
+│   │   │           │   ├── EmailController.java
+│   │   │           │   ├── JobController.java
+│   │   │           │   ├── PaidSubscriptionController.java
+│   │   │           │   ├── PaymentController.java
+│   │   │           │   ├── RecruiterController.java
+│   │   │           │   ├── StudentController.java
+│   │   │           │   ├── SubscriptionPlanController.java
+│   │   │           │   └── UserPaymentStatusController.java
+│   │   │           ├── dto/
+│   │   │           │   ├── ApplicationDTO.java
+│   │   │           │   ├── ApplicationTrackDTO.java
+│   │   │           │   ├── DashBoardDTO.java
+│   │   │           │   ├── EmailRequest.java
+│   │   │           │   ├── JobDTO.java
+│   │   │           │   ├── LoginDTO.java
+│   │   │           │   ├── PaidSubscriptionDTO.java
+│   │   │           │   ├── PaymentDTO.java
+│   │   │           │   ├── RecruiterDTO.java
+│   │   │           │   ├── RegisterDTO.java
+│   │   │           │   ├── StudentDTO.java
+│   │   │           │   ├── SubscriptionPlanDTO.java
+│   │   │           │   └── UserPaymentStatusDTO.java
+│   │   │           ├── entity/
+│   │   │           │   ├── Application.java
+│   │   │           │   ├── Job.java
+│   │   │           │   ├── PaidSubscription.java
+│   │   │           │   ├── Payment.java
+│   │   │           │   ├── Recruiter.java
+│   │   │           │   ├── Student.java
+│   │   │           │   ├── SubscriptionPlan.java
+│   │   │           │   ├── User.java
+│   │   │           │   └── UserPaymentStatus.java
+│   │   │           ├── enum/
+│   │   │           │   ├── ApplicationStatus.java
+│   │   │           │   ├── JobType.java
+│   │   │           │   ├── PaidStatus.java
+│   │   │           │   ├── PaymentStatus.java
+│   │   │           │   ├── PaymentType.java
+│   │   │           │   └── UserRole.java
+│   │   │           ├── exception/
+│   │   │           │   ├── CustomException.java
+│   │   │           │   └── GlobalExceptionHandler.java
+│   │   │           ├── repository/
+│   │   │           │   ├── ApplicationRepository.java
+│   │   │           │   ├── JobRepository.java
+│   │   │           │   ├── PaidSubscriptionRepository.java
+│   │   │           │   ├── PaymentRepository.java
+│   │   │           │   ├── RecruiterRepository.java
+│   │   │           │   ├── StudentRepository.java
+│   │   │           │   ├── SubscriptionPlanRepository.java
+│   │   │           │   ├── UserPaymentStatusRepository.java
+│   │   │           │   └── UserRepository.java
+│   │   │           ├── security/
+│   │   │           │   ├── CustomUserDetails.java
+│   │   │           │   ├── CustomUserDetailsService.java
+│   │   │           │   ├── JwtAuthenticationFilter.java
+│   │   │           │   ├── JwtUtil.java
+│   │   │           │   └── SecurityConfig.java
+│   │   │           ├── service/
+│   │   │           │   ├── impl/
+│   │   │           │   │   ├── AdminServiceImpl.java
+│   │   │           │   │   ├── AnalyticsServiceImpl.java
+│   │   │           │   │   ├── ApplicationServiceImpl.java
+│   │   │           │   │   ├── AuthServiceImpl.java
+│   │   │           │   │   ├── EmailServiceImpl.java
+│   │   │           │   │   ├── FileUploadServiceImpl.java
+│   │   │           │   │   ├── JobServiceImpl.java
+│   │   │           │   │   ├── PaidSubscriptionServiceImpl.java
+│   │   │           │   │   ├── PaymentServiceImpl.java
+│   │   │           │   │   ├── RecruiterServiceImpl.java
+│   │   │           │   │   ├── StudentServiceImpl.java
+│   │   │           │   │   ├── SubscriptionPlanServiceImpl.java
+│   │   │           │   │   └── UserPaymentStatusServiceImpl.java
+│   │   │           │   ├── AdminService.java
+│   │   │           │   ├── AnalyticsService.java
+│   │   │           │   ├── ApplicationService.java
+│   │   │           │   ├── AuthService.java
+│   │   │           │   ├── EmailService.java
+│   │   │           │   ├── FileUploadService.java
+│   │   │           │   ├── JobService.java
+│   │   │           │   ├── PaidSubscriptionService.java
+│   │   │           │   ├── PaymentService.java
+│   │   │           │   ├── RecruiterService.java
+│   │   │           │   ├── StudentService.java
+│   │   │           │   ├── SubscriptionPlanService.java
+│   │   │           │   └── UserPaymentStatusService.java
+│   │   │           └── util/
+│   │   │               └── InvoiceGenerator.java
+│   │   └── resources/
+│   │       ├── application.properties
+│   │       ├── static/
+│   │       └── templates/
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── jobPortal/
+│                   └── ZidioConnectApplicationTests.java
+├── pom.xml
+├── target/
+└── README.md
