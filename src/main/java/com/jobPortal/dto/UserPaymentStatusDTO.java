@@ -4,6 +4,11 @@ import java.time.LocalDate;
 
 import com.jobPortal.enums.PaidStatus;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class UserPaymentStatusDTO {
     private Long id;
     private Long planId;
@@ -26,21 +31,5 @@ public class UserPaymentStatusDTO {
     }
     
     // Getters and Setters
-    public Long getId() { return id; }
-    public void setId(Long id) { this.id = id; }
-    
-    public Long getPlanId() { return planId; }
-    public void setPlanId(Long planId) { this.planId = planId; }
-    
-    public Long getUserId() { return userId; }
-    public void setUserId(Long userId) { this.userId = userId; }
-    
-    public LocalDate getSubscriptionStart() { return subscriptionStart; }
-    public void setSubscriptionStart(LocalDate subscriptionStart) { this.subscriptionStart = subscriptionStart; }
-    
-    public LocalDate getSubscriptionEnd() { return subscriptionEnd; }
-    public void setSubscriptionEnd(LocalDate subscriptionEnd) { this.subscriptionEnd = subscriptionEnd; }
-    
-    public PaidStatus getStatus() { return status; }
-    public void setStatus(PaidStatus status) { this.status = status; }
+  
 }
