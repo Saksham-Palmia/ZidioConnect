@@ -98,7 +98,7 @@ A comprehensive, production-ready backend for ZIDIOConnect - a modern internship
 
 ## ⚙️ Installation & Setup
    ### Clone the Repository
-    git clone https://github.com/yourusername/zidioconnect-backend.git
+    git clone https://github.com/yourusername/ZidioConnect.git
     cd zidioconnect-backend
    ### Database Setup
     sql
